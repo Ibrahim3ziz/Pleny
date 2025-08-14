@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6AAD042E4E986500E96999 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */; };
 		8F8836DF2E0E3C2700E149EF /* PlenyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8836DC2E0E3C2700E149EF /* PlenyApp.swift */; };
 		8F8836E02E0E3C2700E149EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8836D82E0E3C2700E149EF /* Preview Assets.xcassets */; };
 		8F8836E12E0E3C2700E149EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8836DA2E0E3C2700E149EF /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		8F8836E82E0E3C2C00E149EF /* PlenyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8836E52E0E3C2C00E149EF /* PlenyUITests.swift */; };
 		8F8836E92E0E3C2C00E149EF /* PlenyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8836E62E0E3C2C00E149EF /* PlenyUITestsLaunchTests.swift */; };
 		8F8837182E0EE16100E149EF /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F8837172E0EE16100E149EF /* NetworkKit */; };
-		8F88371A2E0F6FE200E149EF /* PostsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8837192E0F6FE200E149EF /* PostsEntity.swift */; };
+		8F88371A2E0F6FE200E149EF /* PostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8837192E0F6FE200E149EF /* PostsResponse.swift */; };
 		8F88371C2E0F704F00E149EF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88371B2E0F704F00E149EF /* HomeViewModel.swift */; };
 		8F88371F2E0F732D00E149EF /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88371E2E0F732D00E149EF /* FeedRequest.swift */; };
 		8F8837772E0F773700E149EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8837762E0F773700E149EF /* HomeView.swift */; };
@@ -41,6 +42,10 @@
 		8F883A002E123C1100E149EF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8839FF2E123C1100E149EF /* AuthViewModel.swift */; };
 		8F883A022E12AF1300E149EF /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A012E12AF1300E149EF /* ImagePreview.swift */; };
 		8F883A042E12D38900E149EF /* MockHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A032E12D38900E149EF /* MockHomeUseCase.swift */; };
+		8F883A392E12E01F00E149EF /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A382E12E01F00E149EF /* CacheManager.swift */; };
+		8F883A552E12F2AE00E149EF /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A542E12F2AE00E149EF /* HomeLocalDataSource.swift */; };
+		8F9C00E12E20780D003283F2 /* DataCacheModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C00DF2E20780D003283F2 /* DataCacheModel.xcdatamodeld */; };
+		8F9C00E42E208813003283F2 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C00E32E208813003283F2 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8F8836AB2E0E3C1D00E149EF /* Pleny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pleny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8836BB2E0E3C1F00E149EF /* PlenyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlenyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8836C52E0E3C1F00E149EF /* PlenyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlenyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +76,7 @@
 		8F8836E22E0E3C2A00E149EF /* PlenyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlenyTests.swift; sourceTree = "<group>"; };
 		8F8836E52E0E3C2C00E149EF /* PlenyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlenyUITests.swift; sourceTree = "<group>"; };
 		8F8836E62E0E3C2C00E149EF /* PlenyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlenyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8F8837192E0F6FE200E149EF /* PostsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEntity.swift; sourceTree = "<group>"; };
+		8F8837192E0F6FE200E149EF /* PostsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsResponse.swift; sourceTree = "<group>"; };
 		8F88371B2E0F704F00E149EF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8F88371E2E0F732D00E149EF /* FeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
 		8F8837762E0F773700E149EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,10 @@
 		8F8839FF2E123C1100E149EF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8F883A012E12AF1300E149EF /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
 		8F883A032E12D38900E149EF /* MockHomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeUseCase.swift; sourceTree = "<group>"; };
+		8F883A382E12E01F00E149EF /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		8F883A542E12F2AE00E149EF /* HomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataSource.swift; sourceTree = "<group>"; };
+		8F9C00E02E20780D003283F2 /* DataCacheModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCacheModel.xcdatamodel; sourceTree = "<group>"; };
+		8F9C00E32E208813003283F2 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6AAD022E4E985B00E96999 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8F8836A22E0E3C1D00E149EF = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +310,7 @@
 		8F8836F62E0E3D4500E149EF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8F883A052E12D5E800E149EF /* Persistence */,
 				8F88371D2E0F731800E149EF /* Request */,
 				8F88388C2E108EAD00E149EF /* DataSource */,
 				8F8836F52E0E3D4500E149EF /* Repositories */,
@@ -302,7 +321,7 @@
 		8F8836F72E0E3D4500E149EF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8F8837192E0F6FE200E149EF /* PostsEntity.swift */,
+				8F8837192E0F6FE200E149EF /* PostsResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -362,6 +381,7 @@
 		8F8838272E0F90A600E149EF /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
+				8F6AAD022E4E985B00E96999 /* Helpers */,
 				8F8838342E0F9A3800E149EF /* Navigation */,
 				8F88382F2E0F921800E149EF /* TabBar */,
 				8F8838292E0F90BD00E149EF /* Root */,
@@ -407,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				8F88388D2E108ED300E149EF /* HomeRemoteDataSource.swift */,
+				8F883A542E12F2AE00E149EF /* HomeLocalDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -437,6 +458,24 @@
 				8F8839F92E123A6D00E149EF /* AuthRemotreDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8F883A052E12D5E800E149EF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				8F9C00E22E20880B003283F2 /* Models */,
+				8F883A382E12E01F00E149EF /* CacheManager.swift */,
+				8F9C00DF2E20780D003283F2 /* DataCacheModel.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8F9C00E22E20880B003283F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F9C00E32E208813003283F2 /* PostModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,18 +620,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8839EB2E11F8F200E149EF /* SearchRequest.swift in Sources */,
+				8F6AAD042E4E986500E96999 /* NetworkMonitor.swift in Sources */,
 				8F883A022E12AF1300E149EF /* ImagePreview.swift in Sources */,
 				8F88388B2E1089A900E149EF /* HomeRepository.swift in Sources */,
+				8F883A392E12E01F00E149EF /* CacheManager.swift in Sources */,
 				8F8838382E0FA07900E149EF /* CustomNavBar.swift in Sources */,
 				8F8839FE2E123BC400E149EF /* AuthUseCase.swift in Sources */,
 				8F8839F22E1234E400E149EF /* UserEntity.swift in Sources */,
 				8F88388E2E108ED300E149EF /* HomeRemoteDataSource.swift in Sources */,
+				8F9C00E42E208813003283F2 /* PostModel.swift in Sources */,
 				8F88371F2E0F732D00E149EF /* FeedRequest.swift in Sources */,
 				8F8838362E0F9B1700E149EF /* AppCoordinator.swift in Sources */,
 				8F88382E2E0F917F00E149EF /* RootView.swift in Sources */,
 				8F8838312E0F922400E149EF /* MainTabView.swift in Sources */,
 				8F8839FC2E123B4D00E149EF /* AuthRepository.swift in Sources */,
-				8F88371A2E0F6FE200E149EF /* PostsEntity.swift in Sources */,
+				8F88371A2E0F6FE200E149EF /* PostsResponse.swift in Sources */,
+				8F883A552E12F2AE00E149EF /* HomeLocalDataSource.swift in Sources */,
 				8F8838902E1094CA00E149EF /* HomeUseCase.swift in Sources */,
 				8F8837772E0F773700E149EF /* HomeView.swift in Sources */,
 				8F8839F42E1235B700E149EF /* AuthRequest.swift in Sources */,
@@ -600,6 +643,7 @@
 				8F8839EE2E121AD200E149EF /* SimpleInputField.swift in Sources */,
 				8F8839F72E12371500E149EF /* UserBody.swift in Sources */,
 				8F8839F02E1228BB00E149EF /* PlenyButton.swift in Sources */,
+				8F9C00E12E20780D003283F2 /* DataCacheModel.xcdatamodeld in Sources */,
 				8F8836DF2E0E3C2700E149EF /* PlenyApp.swift in Sources */,
 				8F88371C2E0F704F00E149EF /* HomeViewModel.swift in Sources */,
 				8F8838922E10C26C00E149EF /* PostImageGrid.swift in Sources */,
@@ -949,6 +993,19 @@
 			productName = NetworkKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8F9C00DF2E20780D003283F2 /* DataCacheModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F9C00E02E20780D003283F2 /* DataCacheModel.xcdatamodel */,
+			);
+			currentVersion = 8F9C00E02E20780D003283F2 /* DataCacheModel.xcdatamodel */;
+			path = DataCacheModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8F8836A32E0E3C1D00E149EF /* Project object */;
 }

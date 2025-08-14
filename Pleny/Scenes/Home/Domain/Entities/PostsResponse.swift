@@ -8,13 +8,13 @@
 import Foundation
 
 // MARK: - Post response
-struct PostsEntity: Codable, Equatable {
-    let posts: [Post]
+struct PostsResponse: Codable {
+    let posts: [PostEntity]
     let total, skip, limit: Int
 }
 
-// MARK: - Post
-struct Post: Codable, Equatable {
+// MARK: - PostEntity
+struct PostEntity: Codable {
     let id: Int
     let title, body: String
     let tags: [String]
@@ -28,6 +28,6 @@ struct Post: Codable, Equatable {
 }
 
 // MARK: - Reactions
-struct Reactions: Codable, Equatable {
+struct Reactions: Codable {
     let likes, dislikes: Int
 }
