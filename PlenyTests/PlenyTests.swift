@@ -31,7 +31,6 @@ final class PlenyTests: XCTestCase {
     }
     
     // MARK: - Test Success
-    
     func test_getPosts_success_shouldUpdatePosts() {
         // Given
         let expectedPosts = [
@@ -80,6 +79,25 @@ final class PlenyTests: XCTestCase {
         
         // Then
         wait(for: [expectation], timeout: 1.0)
+    }
+    
+    func test_saveCurrentPosts_savesSuccessfully() {
+        // Given
+        let expectedPost = Post(domain: PostEntity(id: 1,
+                                                   title: "Cached",
+                                                   body: "This is cached",
+                                                   tags: [""],
+                                                   reactions: Reactions(likes: 0, dislikes: 0),
+                                                   views: 0,
+                                                   userID: 1))
+        let posts = Posts(posts: [expectedPost])
+        
+        // When
+        mockUseCase.saveCurrentPosts(posts)
+        
+        // Then
+        XCTAssertEqual(mockUseCase.savedPosts?.posts.count, 1)
+        XCTAssertEqual(mockUseCase.savedPosts?.posts.first?.title, "Cached")
     }
     
     // MARK: - Performance (Optional)
