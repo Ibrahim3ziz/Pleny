@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RootView: View {
     @StateObject var coordinator = AppCoordinator()
+    @StateObject var networkMonitor = NetworkMonitor()
     
     var body: some View {
         Group {
@@ -20,5 +21,6 @@ struct RootView: View {
             }
         }
         .environmentObject(coordinator)
+        .environmentObject(networkMonitor)
     }
 }
