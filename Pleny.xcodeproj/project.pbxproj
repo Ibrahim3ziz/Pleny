@@ -42,6 +42,7 @@
 		8F883A002E123C1100E149EF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8839FF2E123C1100E149EF /* AuthViewModel.swift */; };
 		8F883A022E12AF1300E149EF /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A012E12AF1300E149EF /* ImagePreview.swift */; };
 		8F883A042E12D38900E149EF /* MockHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A032E12D38900E149EF /* MockHomeUseCase.swift */; };
+		8F883A392E12E01F00E149EF /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F883A382E12E01F00E149EF /* CacheManager.swift */; };
 		8F9C00E12E20780D003283F2 /* DataCacheModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C00DF2E20780D003283F2 /* DataCacheModel.xcdatamodeld */; };
 		8F9C00E42E208813003283F2 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C00E32E208813003283F2 /* PostModel.swift */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		8F8839FF2E123C1100E149EF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8F883A012E12AF1300E149EF /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
 		8F883A032E12D38900E149EF /* MockHomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeUseCase.swift; sourceTree = "<group>"; };
+		8F883A382E12E01F00E149EF /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		8F9C00E02E20780D003283F2 /* DataCacheModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCacheModel.xcdatamodel; sourceTree = "<group>"; };
 		8F9C00E32E208813003283F2 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -449,6 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				8F9C00E22E20880B003283F2 /* Models */,
+				8F883A382E12E01F00E149EF /* CacheManager.swift */,
 				8F9C00DF2E20780D003283F2 /* DataCacheModel.xcdatamodeld */,
 			);
 			path = Persistence;
@@ -606,6 +609,7 @@
 				8F8839EB2E11F8F200E149EF /* SearchRequest.swift in Sources */,
 				8F883A022E12AF1300E149EF /* ImagePreview.swift in Sources */,
 				8F88388B2E1089A900E149EF /* HomeRepository.swift in Sources */,
+				8F883A392E12E01F00E149EF /* CacheManager.swift in Sources */,
 				8F8838382E0FA07900E149EF /* CustomNavBar.swift in Sources */,
 				8F8839FE2E123BC400E149EF /* AuthUseCase.swift in Sources */,
 				8F8839F22E1234E400E149EF /* UserEntity.swift in Sources */,
