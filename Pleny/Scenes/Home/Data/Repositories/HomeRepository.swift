@@ -11,14 +11,19 @@ import NetworkKit
 protocol HomeRepositoryInterface: AnyObject {
     func fetchPosts() -> AnyPublisher<PostsResponse, NetworkError>
     func searchPosts(query: String) -> AnyPublisher<PostsResponse, NetworkError>
+    func getCachedPosts() -> AnyPublisher<[Post], CacheDataError>
+    func saveCurrentPosts(_ posts: Posts?)
 }
 
 final class HomeRepository: HomeRepositoryInterface {
-    
     private let remoteDataSource: HomeRemoteDataSourceInterface
+    private let localDataSource: HomeLocalDataSourceInterface
     
-    init(remoteDataSource: HomeRemoteDataSourceInterface = HomeRemoteDataSource()) {
+    init(remoteDataSource: HomeRemoteDataSourceInterface = HomeRemoteDataSource(),
+         localDataSource: HomeLocalDataSourceInterface = HomeLocalDataSource()
+    ) {
         self.remoteDataSource = remoteDataSource
+        self.localDataSource = localDataSource
     }
     
     func fetchPosts() -> AnyPublisher<PostsResponse, NetworkError> {
@@ -27,5 +32,13 @@ final class HomeRepository: HomeRepositoryInterface {
     
     func searchPosts(query: String) -> AnyPublisher<PostsResponse, NetworkError> {
         remoteDataSource.searchPost(query: query)
+    }
+    
+    func getCachedPosts() -> AnyPublisher<[Post], CacheDataError> {
+        localDataSource.getCachedPosts()
+    }
+    
+    func saveCurrentPosts(_ posts: Posts?) {
+        localDataSource.saveCurrentPosts(posts)
     }
 }

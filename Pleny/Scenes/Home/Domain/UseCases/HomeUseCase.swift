@@ -11,6 +11,8 @@ import Combine
 protocol HomeUseCaseInterface: AnyObject {
     func fetchPosts() -> AnyPublisher<PostsResponse, NetworkError>
     func searchPosts(query: String) -> AnyPublisher<PostsResponse, NetworkError>
+    func getCachedPosts() -> AnyPublisher<[Post], CacheDataError>
+    func saveCurrentPosts(_ posts: Posts?)
 }
 
 final class HomeUseCase: HomeUseCaseInterface {
@@ -27,5 +29,13 @@ final class HomeUseCase: HomeUseCaseInterface {
     
     func searchPosts(query: String) -> AnyPublisher<PostsResponse, NetworkError> {
         repository.searchPosts(query: query)
+    }
+    
+    func getCachedPosts() -> AnyPublisher<[Post], CacheDataError> {
+        repository.getCachedPosts()
+    }
+    
+    func saveCurrentPosts(_ posts: Posts?)  {
+        repository.saveCurrentPosts(posts)
     }
 }
