@@ -11,6 +11,7 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State private var selectedImage: String? = nil
     @State private var isImageViewerPresented = false
+    @EnvironmentObject var networkMonitor: NetworkMonitor
     
     var body: some View {
         ZStack {
@@ -61,6 +62,16 @@ struct HomeView: View {
         }
         .onAppear {
             viewModel.getPosts()
+        }
+        .onChange(of: networkMonitor.status) { newStatus in
+            switch newStatus {
+            case .connected:
+                print("Switched to online mode")
+                viewModel.getPosts()
+            case .disconnected:
+                print("Switched to offline mode")
+                viewModel.fetchCachedPosts()
+            }
         }
         .background(Color.white)
     }
