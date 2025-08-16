@@ -10,12 +10,14 @@ import Foundation
 protocol AppCoordinatorProtocol {
     func navigateToMainFlow(with user: UserEntity)
     func navigateToAuthFlow()
+    func navigateToProfileFlow()
 }
 
 final class AppCoordinator: ObservableObject, AppCoordinatorProtocol {
     enum Screen {
         case main
         case auth
+        case profile
     }
     
     @Published var currentScreen: Screen = .auth
@@ -26,5 +28,9 @@ final class AppCoordinator: ObservableObject, AppCoordinatorProtocol {
     
     func navigateToAuthFlow() {
         currentScreen = .auth
+    }
+    
+    func navigateToProfileFlow() {
+        currentScreen = .profile
     }
 }

@@ -15,9 +15,15 @@ struct RootView: View {
         Group {
             switch coordinator.currentScreen {
             case .auth:
-                AuthView(coordinator: coordinator)
+                if UserDefaults.standard.bool(forKey: Constants.isUserLoggedIn) == true {
+                    MainTabView()
+                } else {
+                    AuthView(coordinator: coordinator)
+                }
             case .main:
                 MainTabView()
+            case .profile:
+                ProfileView(coordinator: coordinator)
             }
         }
         .environmentObject(coordinator)

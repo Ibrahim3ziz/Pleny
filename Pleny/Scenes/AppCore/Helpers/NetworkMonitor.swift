@@ -21,7 +21,7 @@ class NetworkMonitor: ObservableObject {
     
     init() {
         monitor.pathUpdateHandler = { [weak self] path in
-            guard let self = self else { return }
+            guard let self else { return }
             
             // Monitor runs on a background thread so we need to publish
             // on the main thread

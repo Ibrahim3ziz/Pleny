@@ -25,9 +25,14 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Private Properties
     private var cachedPosts: [PostEntity] = [] // Store cached posts
     private var networkMonitor = NetworkMonitor()
-    
-    init(useCase: HomeUseCaseInterface = HomeUseCase(), bindSearch: Bool = true) {
+    private let coordinator: AppCoordinatorProtocol?
+        
+    init(useCase: HomeUseCaseInterface = HomeUseCase(),
+         bindSearch: Bool = true,
+         coordinator: AppCoordinatorProtocol?
+    ) {
         self.useCase = useCase
+        self.coordinator = coordinator
         if bindSearch {
             $searchText
                 .removeDuplicates()

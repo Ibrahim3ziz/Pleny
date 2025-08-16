@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @StateObject private var viewModel: ProfileViewModel
+    
+    init(coordinator: AppCoordinator) {
+        _viewModel = StateObject(wrappedValue: ProfileViewModel(coordinator: coordinator))
+    }
+    
     var body: some View {
         VStack(alignment: .center) {
             
@@ -65,7 +72,7 @@ struct ProfileView: View {
                         
                         Text("Change Password")
                         Spacer()
-                        Button("" ,systemImage: "chevron.right") {
+                        Button("" , systemImage: "chevron.right") {
                             
                         }
                         .padding(.trailing, -16)
@@ -79,12 +86,17 @@ struct ProfileView: View {
             .scrollContentBackground(.hidden)
             
             HStack {
-                Image("logout_icon")
-                    .frame(width: 24, height: 24)
-                
-                Text("Logout")
-                    .foregroundStyle(.black)
-                
+                Button {
+                    viewModel.logout()
+                } label: {
+                    HStack {
+                        Image("logout_icon")
+                        Text("Logout")
+                            .foregroundStyle(.black)
+                            .padding(.trailing, 0)
+                    }
+                    .foregroundStyle(Color.foundationMainPrimary)
+                }
                 Spacer()
             }
             .padding(.leading, 8)
@@ -101,5 +113,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(coordinator: AppCoordinator())
 }
