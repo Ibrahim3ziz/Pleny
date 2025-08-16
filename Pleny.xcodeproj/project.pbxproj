@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F33C1FE2E50B83A00A9CAE0 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */; };
+		8F33C2012E50C9D400A9CAE0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */; };
 		8F6AAD042E4E986500E96999 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */; };
 		8F6AAD072E4FB52900E96999 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD062E4FB52900E96999 /* ProfileView.swift */; };
 		8F6AAD0C2E4FD51100E96999 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD0B2E4FD51100E96999 /* Colors.swift */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8F6AAD062E4FB52900E96999 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8F6AAD0B2E4FD51100E96999 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -141,6 +143,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F33C1FF2E50C3FD00A9CAE0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8F6AAD022E4E985B00E96999 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +678,7 @@
 				8F88388B2E1089A900E149EF /* HomeRepository.swift in Sources */,
 				8F883A392E12E01F00E149EF /* CacheManager.swift in Sources */,
 				8F8838382E0FA07900E149EF /* CustomNavBar.swift in Sources */,
+				8F33C2012E50C9D400A9CAE0 /* ErrorView.swift in Sources */,
 				8F8839FE2E123BC400E149EF /* AuthUseCase.swift in Sources */,
 				8F8839F22E1234E400E149EF /* UserEntity.swift in Sources */,
 				8F88388E2E108ED300E149EF /* HomeRemoteDataSource.swift in Sources */,
