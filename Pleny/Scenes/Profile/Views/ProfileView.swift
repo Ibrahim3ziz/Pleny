@@ -65,7 +65,7 @@ struct ProfileView: View {
                         
                         Text("Change Password")
                         Spacer()
-                        Button("" ,systemImage: "chevron.right") {
+                        Button("" , systemImage: "chevron.right") {
                             
                         }
                         .padding(.trailing, -16)
@@ -79,12 +79,17 @@ struct ProfileView: View {
             .scrollContentBackground(.hidden)
             
             HStack {
-                Image("logout_icon")
-                    .frame(width: 24, height: 24)
-                
-                Text("Logout")
-                    .foregroundStyle(.black)
-                
+                Button {
+                    viewModel.logout()
+                } label: {
+                    HStack {
+                        Image("logout_icon")
+                        Text("Logout")
+                            .foregroundStyle(.black)
+                            .padding(.trailing, 0)
+                    }
+                    .foregroundStyle(Color.foundationMainPrimary)
+                }
                 Spacer()
             }
             .padding(.leading, 8)
