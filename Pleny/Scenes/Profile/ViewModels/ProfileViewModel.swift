@@ -15,4 +15,13 @@ final class ProfileViewModel: ObservableObject {
         self.coordinator = coordinator
     }
     
+    func logout() {
+        UserDefaults.standard.set(false, forKey: Constants.isUserLoggedIn)
+        KeyChain.delete(key: Constants.userSession)
+        navigateToAuth()
+    }
+    
+    private func navigateToAuth() {
+        coordinator?.navigateToAuthFlow()
+    }
 }
