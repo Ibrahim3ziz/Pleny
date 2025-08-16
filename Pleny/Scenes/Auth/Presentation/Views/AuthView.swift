@@ -57,8 +57,7 @@ struct AuthView: View {
                     btnTitleColor: Color.white,
                     isEnabled: areFieldsValid
                 ) {
-                    viewModel.login(username: "emilys", password: "emilyspass")
-                    print("Sign In Tapped")
+                    viewModel.login(username: username, password: password)
                 }
                 .padding(.bottom)
             }
