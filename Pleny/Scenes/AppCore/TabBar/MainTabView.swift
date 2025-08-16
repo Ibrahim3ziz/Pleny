@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @SceneStorage("selectedTab") private var selectedTabIndex = 0
     
     var body: some View {
-        
-        TabView {
+        TabView(selection: $selectedTabIndex) {
             HomeView()
                 .tabItem {
-                    Label("", image: "icon-tabbar-home")
+                    Label("Home", systemImage: selectedTabIndex == 0 ? "house.fill" : "house")
                 }
+                .tag(0)
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: selectedTabIndex == 1 ? "person.fill" : "person")
+                }
+                .tag(1)
         }
     }
+}
+
+#Preview {
+    MainTabView()
 }

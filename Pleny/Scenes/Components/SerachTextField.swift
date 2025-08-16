@@ -44,7 +44,7 @@ struct SerachTextField: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 8)
-                .stroke(Color("lightGray"), lineWidth: 1)
+                .stroke(Color("lightGrayColor"), lineWidth: 1)
         )
         .frame(height: 50)
         .frame(maxWidth: .infinity)
