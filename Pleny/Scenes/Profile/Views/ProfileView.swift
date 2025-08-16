@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @StateObject private var viewModel: ProfileViewModel
+    
+    init(coordinator: AppCoordinator) {
+        _viewModel = StateObject(wrappedValue: ProfileViewModel(coordinator: coordinator))
+    }
+    
     var body: some View {
         VStack(alignment: .center) {
             
@@ -106,5 +113,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(coordinator: AppCoordinator())
 }
