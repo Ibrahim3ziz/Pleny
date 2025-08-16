@@ -72,6 +72,12 @@ struct AuthView: View {
                     .cornerRadius(12)
                     .shadow(radius: 4)
             }
+            
+            if viewModel.error != nil { // handle login error.
+                ZStack {
+                    ErrorView(title: "Login Error", message: "Your username or password is incorrect. Please try again.")
+                }
+            }
         }
         .ignoresSafeArea(edges: .top)
         .background(Color.white)
