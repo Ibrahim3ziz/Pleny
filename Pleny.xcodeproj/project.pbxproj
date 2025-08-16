@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F33C1FE2E50B83A00A9CAE0 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */; };
 		8F33C2012E50C9D400A9CAE0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */; };
+		8F33C2032E51128000A9CAE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2022E51128000A9CAE0 /* Constants.swift */; };
 		8F33C2052E511ADE00A9CAE0 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */; };
 		8F6AAD042E4E986500E96999 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */; };
 		8F6AAD072E4FB52900E96999 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD062E4FB52900E96999 /* ProfileView.swift */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8F33C2022E51128000A9CAE0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8F6AAD062E4FB52900E96999 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				8F6AAD0A2E4FD50400E96999 /* Colors */,
 				8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */,
+				8F33C2022E51128000A9CAE0 /* Constants.swift */,
 				8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */,
 			);
 			path = Helpers;
@@ -710,6 +713,7 @@
 				8F8838332E0F93ED00E149EF /* AuthView.swift in Sources */,
 				8F883A002E123C1100E149EF /* AuthViewModel.swift in Sources */,
 				8F6AAD072E4FB52900E96999 /* ProfileView.swift in Sources */,
+				8F33C2032E51128000A9CAE0 /* Constants.swift in Sources */,
 				8F8839E92E11EBF300E149EF /* SerachTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
