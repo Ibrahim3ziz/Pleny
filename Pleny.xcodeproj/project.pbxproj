@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F33C1FE2E50B83A00A9CAE0 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */; };
 		8F33C2012E50C9D400A9CAE0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */; };
+		8F33C2052E511ADE00A9CAE0 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */; };
 		8F6AAD042E4E986500E96999 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */; };
 		8F6AAD072E4FB52900E96999 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD062E4FB52900E96999 /* ProfileView.swift */; };
 		8F6AAD0C2E4FD51100E96999 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AAD0B2E4FD51100E96999 /* Colors.swift */; };
@@ -72,6 +73,7 @@
 /* Begin PBXFileReference section */
 		8F33C1FD2E50B83A00A9CAE0 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		8F33C2002E50C9D400A9CAE0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8F6AAD062E4FB52900E96999 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8F6AAD0B2E4FD51100E96999 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				8F6AAD0A2E4FD50400E96999 /* Colors */,
 				8F6AAD032E4E986500E96999 /* NetworkMonitor.swift */,
+				8F33C2042E511ADE00A9CAE0 /* KeyChain.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				8F9C00E12E20780D003283F2 /* DataCacheModel.xcdatamodeld in Sources */,
 				8F8836DF2E0E3C2700E149EF /* PlenyApp.swift in Sources */,
 				8F88371C2E0F704F00E149EF /* HomeViewModel.swift in Sources */,
+				8F33C2052E511ADE00A9CAE0 /* KeyChain.swift in Sources */,
 				8F33C1FE2E50B83A00A9CAE0 /* ProfileHeader.swift in Sources */,
 				8F8838922E10C26C00E149EF /* PostImageGrid.swift in Sources */,
 				8F8838892E0FB36500E149EF /* PostView.swift in Sources */,
