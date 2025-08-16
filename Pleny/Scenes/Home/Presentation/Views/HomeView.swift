@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var viewModel = HomeViewModel()
+    @StateObject private var viewModel: HomeViewModel
     @State private var selectedImage: String? = nil
     @State private var isImageViewerPresented = false
     @EnvironmentObject var networkMonitor: NetworkMonitor
     
+    init(coordinator: AppCoordinator) {
+        _viewModel = StateObject(wrappedValue: HomeViewModel(coordinator: coordinator))
+    }
+
     var body: some View {
         ZStack {
             VStack {
@@ -78,5 +82,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(coordinator: AppCoordinator())
 }
